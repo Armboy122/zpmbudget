@@ -1,0 +1,71 @@
+body {
+  font-family: var(--font-sans, "IBM Plex Sans Thai Looped", "Sarabun", sans-serif);
+  font-size: var(--text-body);
+  line-height: 1.55;
+  color: var(--text-primary);
+  font-feature-settings: "tnum" 1, "ss01" 1;
+}
+
+h1 { font-size: var(--text-h1); font-weight: 650; line-height: 1.25; }
+h2 { font-size: var(--text-h2); font-weight: 600; line-height: 1.35; }
+h3 { font-size: var(--text-h3); font-weight: 600; line-height: 1.4; }
+
+.text-display {
+  font-size: var(--text-display);
+  font-weight: 700;
+  line-height: 1.15;
+  font-variant-numeric: tabular-nums;
+}
+
+.text-kicker {
+  font-size: var(--text-kicker);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-tertiary);
+}
+
+.text-small { font-size: var(--text-small); line-height: 1.5; }
+.text-caption { font-size: var(--text-caption); line-height: 1.45; color: var(--text-tertiary); }
+
+code, .text-mono {
+  font-family: var(--font-mono, "IBM Plex Mono", "SFMono-Regular", Consolas, monospace);
+  font-size: var(--text-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Thai language rules */
+:lang(th) {
+  line-height: 1.6;
+  word-break: normal;
+  overflow-wrap: anywhere;
+}
+
+/* Tabular numbers everywhere they count */
+.tabular { font-variant-numeric: tabular-nums; }
+
+/* App shell layout */
+.app-shell {
+  width: min(1440px, calc(100vw - var(--space-6)));
+  margin: 0 auto;
+  padding-block: var(--space-5) var(--space-7);
+  background: var(--surface-page);
+  min-height: 100dvh;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid var(--ring);
+  outline-offset: 2px;
+}
+
+/* Buttons base reset */
+button { cursor: pointer; border: none; background: none; }
+button:disabled { cursor: not-allowed; opacity: 0.4; }
+select { cursor: pointer; }
+
+dialog::backdrop {
+  background: oklch(20% 0.01 250 / 0.5);
+  backdrop-filter: blur(2px);
+}
+dialog[open] { display: flex; flex-direction: column; }

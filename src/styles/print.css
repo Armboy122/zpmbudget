@@ -1,0 +1,19 @@
+@media print {
+  .app-shell { width: 100%; padding: 0; background: white; }
+  .no-print,
+  [data-no-print],
+  .admin-modal,
+  .filter-panel,
+  .snapshot-bar-actions { display: none !important; }
+  .panel, .metric-card { box-shadow: none; border: 1px solid #ccc; break-inside: avoid; }
+  .metric-grid { grid-template-columns: repeat(5, 1fr) !important; }
+  body { background: white; color: black; font-size: 12pt; }
+  h1 { font-size: 18pt; }
+  h2 { font-size: 14pt; }
+  .print-header { display: block !important; }
+  .chart-wrap { break-inside: avoid; }
+  table { border-collapse: collapse; width: 100%; }
+  th, td { border: 1px solid #ccc; padding: 4px 8px; }
+}
+
+.print-header { display: none; }

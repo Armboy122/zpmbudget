@@ -1,0 +1,105 @@
+:root {
+  /* === SURFACE === */
+  --surface-page:     oklch(98.5% 0.003 250);
+  --surface-card:     #ffffff;
+  --surface-sunken:   oklch(96.5% 0.005 250);
+  --surface-overlay:  oklch(99% 0 0);
+
+  /* === BORDERS === */
+  --border-subtle:    oklch(92% 0.005 250);
+  --border-default:   oklch(87% 0.008 250);
+  --border-strong:    oklch(75% 0.01 250);
+
+  /* === TEXT === */
+  --text-primary:     oklch(22% 0.01 250);
+  --text-secondary:   oklch(42% 0.012 250);
+  --text-tertiary:    oklch(58% 0.012 250);
+  --text-disabled:    oklch(72% 0.008 250);
+  --text-on-accent:   #ffffff;
+
+  /* === BRAND — งบทำการ = น้ำเงิน === */
+  --accent-bud:       oklch(48% 0.16 255);
+  --accent-bud-soft:  oklch(94% 0.04 255);
+  --accent-bud-strong: oklch(38% 0.18 255);
+
+  /* === BRAND — ZPM = เขียวมรกต === */
+  --accent-zpm:       oklch(52% 0.14 165);
+  --accent-zpm-soft:  oklch(94% 0.04 165);
+  --accent-zpm-strong: oklch(40% 0.16 165);
+
+  /* === SEMANTIC === */
+  --color-success:    oklch(55% 0.15 150);
+  --color-warning:    oklch(70% 0.16 75);
+  --color-danger:     oklch(58% 0.20 25);
+  --color-info:       oklch(58% 0.14 230);
+  --color-success-bg: oklch(96% 0.04 150);
+  --color-warning-bg: oklch(96% 0.05 75);
+  --color-danger-bg:  oklch(96% 0.04 25);
+  --color-info-bg:    oklch(96% 0.04 230);
+
+  /* === FOCUS RING === */
+  --ring: oklch(55% 0.2 255 / 0.5);
+
+  /* === SPACING (4px base) === */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 24px;
+  --space-6: 32px;
+  --space-7: 48px;
+  --space-8: 64px;
+  --space-9: 96px;
+
+  /* === RADIUS === */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 14px;
+  --radius-xl: 20px;
+  --radius-pill: 999px;
+
+  /* === ELEVATION === */
+  --shadow-sm:    0 1px 2px oklch(20% 0.01 250 / 0.06);
+  --shadow-md:    0 2px 8px oklch(20% 0.01 250 / 0.06), 0 1px 2px oklch(20% 0.01 250 / 0.04);
+  --shadow-lg:    0 8px 24px oklch(20% 0.01 250 / 0.08), 0 2px 6px oklch(20% 0.01 250 / 0.05);
+  --shadow-focus: 0 0 0 3px var(--ring);
+
+  /* === TYPE SCALE === */
+  --text-display: 36px;
+  --text-h1:      28px;
+  --text-h2:      20px;
+  --text-h3:      16px;
+  --text-metric:  24px;
+  --text-body:    14px;
+  --text-small:   13px;
+  --text-mono:    13px;
+  --text-kicker:  11px;
+  --text-caption: 12px;
+
+  /* === MOTION === */
+  --duration-fast:   120ms;
+  --duration-normal: 220ms;
+  --duration-slow:   400ms;
+  --ease-out-soft:   cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-out-expo:   cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out:     cubic-bezier(0.65, 0, 0.35, 1);
+}
+
+/* === DARK THEME === */
+[data-theme="dark"] {
+  --surface-page:    oklch(16% 0.01 250);
+  --surface-card:    oklch(20% 0.012 250);
+  --surface-sunken:  oklch(13% 0.01 250);
+  --surface-overlay: oklch(18% 0.01 250);
+  --border-subtle:   oklch(28% 0.012 250);
+  --border-default:  oklch(34% 0.012 250);
+  --border-strong:   oklch(46% 0.012 250);
+  --text-primary:    oklch(94% 0.005 250);
+  --text-secondary:  oklch(72% 0.008 250);
+  --text-tertiary:   oklch(58% 0.01 250);
+  --text-disabled:   oklch(40% 0.008 250);
+  --accent-bud:      oklch(68% 0.16 255);
+  --accent-bud-soft: oklch(25% 0.06 255);
+  --accent-zpm:      oklch(70% 0.14 165);
+  --accent-zpm-soft: oklch(22% 0.05 165);
+}
