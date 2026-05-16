@@ -1,0 +1,12 @@
+.codex_backend_deps/
+.next/
+.env*
+.DS_Store
+
+backend/
+frontend/
+ต้นฉบับ/
+
+node_modules/
+coverage/
+*.log
